@@ -1,0 +1,38 @@
+<div class="container is-fluid">
+    <div class="section">
+        <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+                <a class="navbar-item" [routerLink]="['/home']" >
+                    <h1 class="title">Fast Gino</h1>
+                </a>
+                <div class="navbar-burger" data-target="MyNavbar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div id="MyNavbar" class="navbar-menu">
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="field">
+                            <p class="control">
+                                <a class="bd-tw-button button"[routerLink]="['/cart']" >
+              <span class="icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+                                    <span>
+                Cart
+              </span>
+                                </a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <router-outlet></router-outlet>
+    </div>
+</div>
